@@ -1,0 +1,23 @@
+@media only screen and (max-width: 767px) {
+	#wrapper {
+		width: 90%;
+		height: 90%;
+	}
+	#nav {
+		display: none;
+	}
+	#nav-small {
+		display: flex;
+	}
+	.wrap {
+		flex-wrap: wrap;
+	}
+	.photo {
+		width: 100%;
+		padding: 0;
+	}
+	.photo img {
+		width: 80%;
+		height: 80%;
+	}
+}

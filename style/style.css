@@ -1,0 +1,125 @@
+html {
+	height: 100%;
+}
+body {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin: 0;
+	background: url('https://cdn.pixabay.com/photo/2016/06/29/09/29/code-1486361_1280.jpg') no-repeat;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	color: whitesmoke;
+}
+#wrapper {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+	height: 90%;
+}
+
+/* Sweapable main content*/
+
+.mySlides {
+	display: none;
+}
+.slideshow-container {
+    position: relative;
+	margin: auto;
+	width: 100%;   
+}
+.dot {
+	cursor: pointer;
+	color: aquamarine;
+	text-transform: uppercase;
+}
+.dot:hover {
+	border-bottom: 1px solid  #ee6e73;
+}
+.active {
+	border-bottom: 1px solid  #ee6e73;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+		opacity: .4;
+	} 
+    to {
+		opacity: 1;
+	}
+}
+
+/*Nav*/
+
+#nav-small {
+	display: none;
+}
+
+
+/* About*/
+
+.photo {
+	width: 30%;
+	padding: 20px;
+}
+.photo img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.about {
+	border-left: 10px solid  #ee6e73;
+	width: 65%;
+}
+.signature {
+	font-family: 'Swanky and Moo Moo', cursive;
+	font-size: 2em;
+	font-weight: 600;
+	transform: rotate(-10deg);
+	transform-origin: 20% 40%;
+	color: #ee6e73;
+	margin: 0;
+}
+
+#sign {
+	opacity: 0;
+	animation-name: singIn;
+	animation-duration: 1.5s;
+	animation-delay: 17s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes singIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.1);
+	}
+	50% {
+		opacity: 0.5;
+		transform: scale(1.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}	
+}
+
+
+
+.social {
+	color: aquamarine;
+	font-size: x-large;
+	/*transition: all 0.5s;*/
+}
+.social:hover {
+	transform: scale(1.5);
+}
+
+svg {
+	width: 3em;
+	height: 3em;
+}
