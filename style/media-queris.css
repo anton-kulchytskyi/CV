@@ -1,4 +1,9 @@
 @media only screen and (max-width: 767px) {
+	#wrapper {
+		width: 95%;
+		height: 95%;
+		margin: 5px auto;
+	}
 	#nav {
 		display: none;
 	}
