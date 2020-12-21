@@ -36,3 +36,16 @@ function typeWriter() {
 	}
 }
 
+var sign = document.getElementById ('sign');
+
+function signIn() {
+	
+	setTimeout(() => {
+		sign.style.opacity = 1;
+	}, 18500);
+}
+
+function start() {
+	typeWriter ();
+	signIn ();
+}
