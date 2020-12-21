@@ -2,7 +2,7 @@
 	#wrapper {
 		width: 95%;
 		height: 95%;
-		margin: 5px auto;
+		/*margin: 5px auto;*/
 	}
 	#nav {
 		display: none;
@@ -18,8 +18,8 @@
 		padding: 20px 0 0 0;
 	}
 	.photo img {
-		width: 80%;
-		height: 80%;
+		width: 60%;
+		height: 60%;
 	}
 	.photo-text {
 		width: 100%;
