@@ -1,12 +1,12 @@
-html {
+/*html {
 	height: 100%;
-}
+}*/
 body {
     display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
-	margin: 0;
+	/*height: 100%;*/
+	/*margin: 0;*/
 	background: url('https://cdn.pixabay.com/photo/2016/06/29/09/29/code-1486361_1280.jpg') no-repeat;
 	background-size: cover;
 	font-family: 'Roboto', sans-serif;
@@ -14,8 +14,10 @@ body {
 }
 #wrapper {
     background-color: rgba(0, 0, 0, 0.7);
-    width: 80%;
+    width: 90%;
 	height: 90%;
+	margin: 15px auto;
+	padding: 10px;
 }
 
 /* Sweapable main content*/
@@ -70,9 +72,12 @@ body {
 	height: 100%;
 	border-radius: 50%;
 }
+.photo-text {
+	width: 65%;
+}
 .about {
 	border-left: 10px solid  #ee6e73;
-	width: 65%;
+	/*width: 65%;*/
 }
 .signature {
 	font-family: 'Swanky and Moo Moo', cursive;
