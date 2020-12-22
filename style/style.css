@@ -2,10 +2,7 @@ html {
 	height: 100%;
 }
 body {
-    /*display: flex;
-	/*justify-content: center;
-	align-items: center;*/
-	height: 100%;
+    height: 100%;
 	margin: 0;
 	background: url('https://cdn.pixabay.com/photo/2016/06/29/09/29/code-1486361_1280.jpg') no-repeat;
 	background-size: cover;
@@ -16,11 +13,10 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     width: 90%;
 	height: 90%;
-	/*margin: 30px auto;*/
 	padding: 10px;
 }
 
-/* Sweapable main content*/
+/* Main content slide and nav*/
 
 .mySlides {
 	display: none;
@@ -53,9 +49,6 @@ body {
 		opacity: 1;
 	}
 }
-
-/*Nav*/
-
 #nav-small {
 	display: none;
 }
@@ -88,7 +81,6 @@ body {
 	color: #ee6e73;
 	margin: 0;
 }
-
 #sign {
 	opacity: 0;
 	animation-name: singIn;
@@ -97,7 +89,6 @@ body {
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 }
-
 @keyframes singIn {
 	0% {
 		opacity: 0;
@@ -112,18 +103,10 @@ body {
 		transform: scale(1);
 	}	
 }
-
-
-
 .social {
 	color: aquamarine;
 	font-size: x-large;	
 }
 .social:hover {
 	transform: scale(1.5);
-}
-
-svg {
-	width: 3em;
-	height: 3em;
 }

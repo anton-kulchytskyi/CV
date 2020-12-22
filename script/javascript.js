@@ -29,10 +29,11 @@ var txt = 'Hi, my name is Anton and I am 40. I have few experience of writing co
 var speed = 65;
 
 function typeWriter() {
+
 	if (i < txt.length) {
     	document.getElementById("demo").innerHTML += txt.charAt(i);
-    	i++;
-    	setTimeout(typeWriter, speed);
+		i++;
+		setTimeout(typeWriter, speed);
 	}
 }
 
