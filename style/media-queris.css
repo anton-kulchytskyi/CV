@@ -25,3 +25,19 @@
 		width: 100%;
 	}
 }
+@media only screen and (max-width: 575px) {
+	.social-small {
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 0;		
+	}
+	#social-large {
+		display: none;
+		position: absolute;
+		right: 0;
+		bottom: 40px;
+		width: 8%;
+		flex-wrap: wrap;
+	}
+}

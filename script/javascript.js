@@ -50,3 +50,13 @@ function start() {
 	typeWriter ();
 	signIn ();
 }
+
+
+function socialOn() {
+	var x = document.getElementById("social-large");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }

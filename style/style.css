@@ -89,6 +89,27 @@ body {
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 }
+
+.social {
+	color: aquamarine;
+	font-size: x-large;	
+}
+.social:hover {
+	transform: scale(1.5);
+}
+.social-small {
+	display: none;	
+	color: aquamarine;
+	background: transparent;
+	border: none;
+	font-size: x-large;
+	opacity: 0;
+	animation-name: singIn;
+	animation-duration: 1.5s;
+	animation-delay: 17s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
 @keyframes singIn {
 	0% {
 		opacity: 0;
@@ -103,10 +124,13 @@ body {
 		transform: scale(1);
 	}	
 }
-.social {
-	color: aquamarine;
-	font-size: x-large;	
+
+/*.fa-id-card-alt {
+	animation: glowing 1300ms infinite;
+	filter: drop-shadow (0 0 15px aquamarine);
 }
-.social:hover {
-	transform: scale(1.5);
-}
+@keyframes glowing {
+	0% { /*background-color: aquamarine,*/ /*filter: drop-shadow (0 0 3px aquamarine);  }
+	50% { /*background-color: transparent;*/ /*filter: drop-shadow (0 0 15px aquamarine); }
+	100% { /*background-color: aquamarine;*/ /*filter: drop-shadow (0 0 3px aquamarine); }
+}*/
