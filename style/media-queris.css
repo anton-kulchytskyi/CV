@@ -30,13 +30,13 @@
 		display: block;
 		position: absolute;
 		right: 0;
-		bottom: 0;		
+		bottom: 10px;		
 	}
 	#social-large {
 		display: none;
 		position: absolute;
 		right: 0;
-		bottom: 40px;
+		bottom: 50px;
 		width: 8%;
 		flex-wrap: wrap;
 	}
