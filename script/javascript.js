@@ -1,26 +1,11 @@
-// Tab (slide) in navigation
+var flkty = new Flickity('.carousel', {
+	draggable: false,
+	hash: true,
+	wrapAround: true,
+	prevNextButtons: false,
+	pageDots: false,
+});
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function currentSlide(n) {
-  	showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  	var slides = document.getElementsByClassName("mySlides");
-  	var dots = document.getElementsByClassName("dot");
-  	if (n > slides.length) {slideIndex = 1}    
-  	if (n < 1) {slideIndex = slides.length}
-  	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";  
-  	}
-  	for (i = 0; i < dots.length; i++) {
-	  	dots[i].className = dots[i].className.replace(" active", "");
-  	}
-  	slides[slideIndex-1].style.display = "block";  
-  	dots[slideIndex-1].className += " active";
-}
 
 // typewriter on "About" page
 
@@ -55,8 +40,19 @@ function start() {
 function socialOn() {
 	var x = document.getElementById("social-large");
 	if (x.style.display === "none") {
-	  x.style.display = "block";
-	} else {
-	  x.style.display = "none";
+		x.style.display = "block";
 	}
-  }
+	else {
+		x.style.display = "none";
+	}
+}
+
+// function showHide(hide1, hide2, hide3) {
+//     if (document.getElementById(hide1, hide2, hide3)) { 
+//         var obj = document.getElementById(hide1, hide2, hide3); 
+//         if (obj.style.display != "block") { 
+//             obj.style.display = "block"; 
+//         }
+//         else obj.style.display = "none"; 
+//     }     
+// }

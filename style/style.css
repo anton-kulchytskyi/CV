@@ -1,58 +1,43 @@
-html {
-	height: 100%;
+* {
+	box-sizing: border-box;
 }
 body {
-    height: 100%;
-	margin: 0;
+    margin: 0;
 	background: url('https://cdn.pixabay.com/photo/2016/06/29/09/29/code-1486361_1280.jpg') no-repeat;
 	background-size: cover;
 	font-family: 'Roboto', sans-serif;
 	color: whitesmoke;
+	overflow: hidden;
 }
 #wrapper {
     background-color: rgba(0, 0, 0, 0.7);
     width: 90%;
 	height: 90%;
-	padding: 10px;
 }
 
-/* Main content slide and nav*/
+/* Navigation */
 
-.mySlides {
-	display: none;
-}
-.slideshow-container {
-    position: relative;
-	margin: auto;
-	width: 100%;   
-}
-.dot {
+.nav {
+	text-decoration: none;
 	cursor: pointer;
 	color: aquamarine;
 	text-transform: uppercase;
 }
-.dot:hover {
+.nav:hover {
 	border-bottom: 1px solid  #ee6e73;
 }
-.active {
+.nav:focus {
 	border-bottom: 1px solid  #ee6e73;
-}
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@keyframes fade {
-    from {
-		opacity: .4;
-	} 
-    to {
-		opacity: 1;
-	}
 }
 #nav-small {
 	display: none;
 }
 
+/* Main content */
+
+/* main, #main-content {
+	width: 100%;
+} */
 
 /* About*/
 
@@ -82,6 +67,7 @@ body {
 	margin: 0;
 }
 #sign {
+	width: 100%;
 	opacity: 0;
 	animation-name: singIn;
 	animation-duration: 1.5s;
@@ -89,7 +75,6 @@ body {
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 }
-
 .social {
 	color: aquamarine;
 	font-size: x-large;	
@@ -103,12 +88,6 @@ body {
 	background: transparent;
 	border: none;
 	font-size: x-large;
-	opacity: 0;
-	animation-name: singIn;
-	animation-duration: 1.5s;
-	animation-delay: 17s;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
 }
 @keyframes singIn {
 	0% {
@@ -125,12 +104,147 @@ body {
 	}	
 }
 
-/*.fa-id-card-alt {
-	animation: glowing 1300ms infinite;
-	filter: drop-shadow (0 0 15px aquamarine);
+/* Skills*/
+
+.mich {
+	font-family: 'Swanky and Moo Moo', cursive;
+	font-size: 2em;
+	font-weight: 600;
+	letter-spacing: 3px;
+	color: #ee6e73;	
 }
-@keyframes glowing {
-	0% { /*background-color: aquamarine,*/ /*filter: drop-shadow (0 0 3px aquamarine);  }
-	50% { /*background-color: transparent;*/ /*filter: drop-shadow (0 0 15px aquamarine); }
-	100% { /*background-color: aquamarine;*/ /*filter: drop-shadow (0 0 3px aquamarine); }
+.skill-back {
+	width: 30%;	
+}
+.skill-round {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 5px solid grey;	
+}
+/* #Layer_1 {
+	width: 36px;
+	fill: aquamarine;
+}
+.skill-name {
+	width: 20%;
+	color: aquamarine;
+	font-size: 36px;
+}
+.skills-container {
+	width: 80%;
+	border: 2px solid aquamarine;
+	margin: 10px;
+}
+.html {
+	width: 90%;
+}
+.css {
+	width: 75%;
+}
+.js {
+	width: 60%;
+}
+.md {
+	width: 40%;
+}
+.bs {
+	width: 30%;
+}
+.wp {
+	width: 30%;
+}
+.react {
+	width: 25%;
+}
+.skills {
+	background-color: aquamarine;
+	animation: skillIn 3s cubic-bezier(.53,-0.73,.1,1.5) forwards;
+	color: #ee6e73;
+	font-weight: 900;
+}
+@keyframes skillIn {
+	0% {
+		width: 20%;
+	}
+	100% {
+		width: 100%;
+	}
 }*/
+/*.quote-all {
+	width: 30%;
+}
+.quote {
+	width: 100%;
+}*/
+
+/*.skill-all {
+	width: 70%;
+} */
+
+/* Reference */
+
+.card-row {
+	width: 75%;
+}
+.card {
+	width: 35%;
+	border-radius: 10px;
+	background: rgb(74, 194, 154, 0.7);  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, rgb(189, 255, 243, 0.7), rgb(74, 194, 154, 0.7));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, rgb(189, 255, 243, 0.7), rgb(74, 194, 154, 0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.name {
+	font-family: 'Swanky and Moo Moo', cursive;
+	font-size: 36px;
+	letter-spacing: 1px;	
+}
+.card a {
+	text-decoration: none;
+	color: whitesmoke;
+	cursor: pointer;
+	font-family: 'Swanky and Moo Moo', cursive;
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 3px;
+}
+.card a:hover {
+	color: #ee6e73;
+}
+/* .card p {
+	margin: 5px;
+} */
+/* Portfolio */
+/* .web-example {
+	width: 45%;
+}
+.web-photo {
+	position: relative;
+}
+.web-photo img {
+	width: 100%;
+	padding-top: 10px;
+}
+.read-more {
+	color: aquamarine;
+	position: absolute;
+	bottom: 0;
+	right: 15%;
+}
+#hide1, #hide2, #hide3 {
+    display: none;
+    background: #d1ef8c;
+    text-indent: 50px;
+    text-align: justify;
+    padding: 5px;
+    margin: 5px;
+    animation: open 2s;
+}
+@keyframes open {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */

@@ -1,8 +1,7 @@
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
 	#wrapper {
 		width: 95%;
-		height: 95%;
-		/*margin: 5px auto;*/
+		height: 95%;		
 	}
 	#nav {
 		display: none;
@@ -10,9 +9,6 @@
 	#nav-small {
 		display: flex;
 	}
-	/*.wrap {
-		flex-wrap: wrap;
-	}*/
 	.photo {
 		width: 100%;
 		padding: 20px 0 0 0;
@@ -23,9 +19,9 @@
 	}
 	.photo-text {
 		width: 100%;
-	}
+	}	
 }
-@media only screen and (max-width: 575px) {
+@media screen and (max-width: 550px) {
 	.social-small {
 		display: block;
 		position: absolute;
@@ -39,5 +35,26 @@
 		bottom: 50px;
 		width: 8%;
 		flex-wrap: wrap;
+	}
+	.skill-back {
+		width: 100%;
+	}
+	.skill-all {
+		width: 100%;
+	}
+	/*.quote-all {
+		width: 100%;
+	}*/
+	/* .card-row {
+		width: 100%;
+	} */
+	.card, .card-row {
+		width: 100%;
+	}
+	/* .card p {
+		margin: 0;
+	} */
+	.web-example {
+		width: 80%;
 	}
 }
