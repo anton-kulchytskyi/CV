@@ -1,5 +1,5 @@
 var flkty = new Flickity('.carousel', {
-	draggable: false,
+	// draggable: false,
 	hash: true,
 	wrapAround: true,
 	prevNextButtons: false,

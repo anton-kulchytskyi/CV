@@ -15,7 +15,7 @@
 }
 @media screen and (max-width: 550px) {
 	.photo {
-		width: 70%;
+		width: 60%;
 	}
 	.social-small {
 		display: block;
@@ -35,10 +35,10 @@
 		width: 40%;
 	}
 	.donut {
-		width: 100%;
+		width: 80%;
 	}
 	.skill-name {
-		font-size: 36px;
+		font-size: 30px;
 	}
 	.card {
 		width: 100%;
