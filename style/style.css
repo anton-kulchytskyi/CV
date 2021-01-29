@@ -95,13 +95,21 @@ body {
 
 /* Skills*/
 
+/* #skills {
+	background: url('https://lh3.googleusercontent.com/dSw3-6YqhbkYP5Tq2EeFawRwVVxLZURwlc1q7Js7hL5LUSDrqbGP0Y790umggzBp_HVKQRqVM4-jT05ZMSwmT8CidGrmgYoVYh0CgfBt56qpRoifF5T6j6tPrrgRShx43sNnSYVcSw=w2400');
+} */
+
 .mich {
 	font-family: 'Swanky and Moo Moo', cursive;
 	font-size: 1.5em;
 	font-weight: 600;
 	letter-spacing: 3px;
-	color: #ee6e73;	
+	color: #ee6e73;
+	margin: 5px;
 }
+/* .men-skill {
+	
+} */
 .skill-back {
 	width: 30%;
 	position: relative;
@@ -130,10 +138,26 @@ body {
 .card {
 	width: 35%;
 	border-radius: 10px;
-	background: #ee6e73;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to top, #ee6e7350, #ee6e7380);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to top, #ee6e7350, #ee6e7380); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(-45deg, #7fffd4, #54b7cf, #27386d, #ee6e73);
+    background-size: 150% 150%;
+    animation: change 10s ease-in-out infinite;
 
+
+	/* background: #ee6e73;  fallback for old browsers
+	background: -webkit-linear-gradient(to top, #ee6e7350, #ee6e7380);  Chrome 10-25, Safari 5.1-6
+	background: linear-gradient(to top, #ee6e7350, #ee6e7380); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+@keyframes change {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 .name {
 	font-family: 'Swanky and Moo Moo', cursive;

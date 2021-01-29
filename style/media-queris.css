@@ -15,7 +15,7 @@
 }
 @media screen and (max-width: 550px) {
 	.photo {
-		width: 60%;
+		width: 50%;
 	}
 	.social-small {
 		display: block;
@@ -31,6 +31,19 @@
 		width: 8%;
 		flex-wrap: wrap;
 	}
+	.skill-container {
+		flex-direction: column-reverse;
+		position: relative;
+	}
+	.men-skill {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.men-skill img {
+		width: 100%;
+		opacity: 0.5;
+	}
 	.skill-back {
 		width: 40%;
 	}
@@ -44,6 +57,7 @@
 		width: 100%;
 	}
 	.card p {
+		font-size: 13px;
 		margin: 2px;
 	}
 	.card a {
