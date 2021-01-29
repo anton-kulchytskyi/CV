@@ -47,6 +47,8 @@ function socialOn() {
 	}
 }
 
+
+
 // function showHide(hide1, hide2, hide3) {
 //     if (document.getElementById(hide1, hide2, hide3)) { 
 //         var obj = document.getElementById(hide1, hide2, hide3); 

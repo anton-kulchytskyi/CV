@@ -1,4 +1,4 @@
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 800px) {
 	#wrapper {
 		width: 95%;
 		height: 95%;		
@@ -9,19 +9,14 @@
 	#nav-small {
 		display: flex;
 	}
-	.photo {
-		width: 100%;
-		padding: 20px 0 0 0;
-	}
-	.photo img {
-		width: 60%;
-		height: 60%;
-	}
 	.photo-text {
 		width: 100%;
-	}	
+	}
 }
 @media screen and (max-width: 550px) {
+	.photo {
+		width: 70%;
+	}
 	.social-small {
 		display: block;
 		position: absolute;
@@ -37,23 +32,27 @@
 		flex-wrap: wrap;
 	}
 	.skill-back {
+		width: 40%;
+	}
+	.donut {
 		width: 100%;
 	}
-	.skill-all {
+	.skill-name {
+		font-size: 36px;
+	}
+	.card {
 		width: 100%;
 	}
-	/*.quote-all {
-		width: 100%;
-	}*/
-	/* .card-row {
-		width: 100%;
-	} */
-	.card, .card-row {
-		width: 100%;
+	.card p {
+		margin: 2px;
 	}
-	/* .card p {
-		margin: 0;
-	} */
+	.card a {
+		font-size: 18px;
+		letter-spacing: 2px;
+	}
+	.name {
+		font-size: 24px;
+	}
 	.web-example {
 		width: 80%;
 	}

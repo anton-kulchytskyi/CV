@@ -1,16 +1,13 @@
-* {
-	box-sizing: border-box;
-}
 body {
     margin: 0;
 	background: url('https://cdn.pixabay.com/photo/2016/06/29/09/29/code-1486361_1280.jpg') no-repeat;
 	background-size: cover;
 	font-family: 'Roboto', sans-serif;
-	color: whitesmoke;
+	color: #f5f5f5;
 	overflow: hidden;
 }
 #wrapper {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #000000b3;
     width: 90%;
 	height: 90%;
 }
@@ -20,7 +17,7 @@ body {
 .nav {
 	text-decoration: none;
 	cursor: pointer;
-	color: aquamarine;
+	color: #7fffd4;
 	text-transform: uppercase;
 }
 .nav:hover {
@@ -34,10 +31,6 @@ body {
 }
 
 /* Main content */
-
-/* main, #main-content {
-	width: 100%;
-} */
 
 /* About*/
 
@@ -69,14 +62,10 @@ body {
 #sign {
 	width: 100%;
 	opacity: 0;
-	animation-name: singIn;
-	animation-duration: 1.5s;
-	animation-delay: 17s;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
+	animation: singIn 1.5s linear 17s forwards;
 }
 .social {
-	color: aquamarine;
+	color: #7fffd4;
 	font-size: x-large;	
 }
 .social:hover {
@@ -84,7 +73,7 @@ body {
 }
 .social-small {
 	display: none;	
-	color: aquamarine;
+	color: #7fffd4;
 	background: transparent;
 	border: none;
 	font-size: x-large;
@@ -108,100 +97,55 @@ body {
 
 .mich {
 	font-family: 'Swanky and Moo Moo', cursive;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 600;
 	letter-spacing: 3px;
 	color: #ee6e73;	
 }
 .skill-back {
-	width: 30%;	
+	width: 30%;
+	position: relative;
 }
-.skill-round {
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	border: 5px solid grey;	
+.donut {
+	width: 50%;
 }
-/* #Layer_1 {
-	width: 36px;
-	fill: aquamarine;
+.donut-segment {
+	animation: progress 3s cubic-bezier(.53,-0.73,.1,1.5) forwards;
+}
+@keyframes progress {
+	0% {
+	  stroke-dasharray: 10 100;
+	}
 }
 .skill-name {
-	width: 20%;
-	color: aquamarine;
-	font-size: 36px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #7fffd4;
+	font-size: 48px;
 }
-.skills-container {
-	width: 80%;
-	border: 2px solid aquamarine;
-	margin: 10px;
-}
-.html {
-	width: 90%;
-}
-.css {
-	width: 75%;
-}
-.js {
-	width: 60%;
-}
-.md {
-	width: 40%;
-}
-.bs {
-	width: 30%;
-}
-.wp {
-	width: 30%;
-}
-.react {
-	width: 25%;
-}
-.skills {
-	background-color: aquamarine;
-	animation: skillIn 3s cubic-bezier(.53,-0.73,.1,1.5) forwards;
-	color: #ee6e73;
-	font-weight: 900;
-}
-@keyframes skillIn {
-	0% {
-		width: 20%;
-	}
-	100% {
-		width: 100%;
-	}
-}*/
-/*.quote-all {
-	width: 30%;
-}
-.quote {
-	width: 100%;
-}*/
-
-/*.skill-all {
-	width: 70%;
-} */
-
 /* Reference */
 
-.card-row {
-	width: 75%;
-}
 .card {
 	width: 35%;
 	border-radius: 10px;
-	background: rgb(74, 194, 154, 0.7);  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, rgb(189, 255, 243, 0.7), rgb(74, 194, 154, 0.7));  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, rgb(189, 255, 243, 0.7), rgb(74, 194, 154, 0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #ee6e73;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #ee6e7350, #ee6e7380);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #ee6e7350, #ee6e7380); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .name {
 	font-family: 'Swanky and Moo Moo', cursive;
 	font-size: 36px;
 	letter-spacing: 1px;	
 }
+.card p {
+	margin: 4px;
+}
 .card a {
 	text-decoration: none;
-	color: whitesmoke;
+	color: #f5f5f5;
 	cursor: pointer;
 	font-family: 'Swanky and Moo Moo', cursive;
 	font-size: 24px;
@@ -209,11 +153,8 @@ body {
 	letter-spacing: 3px;
 }
 .card a:hover {
-	color: #ee6e73;
+	color: #7fffd4;
 }
-/* .card p {
-	margin: 5px;
-} */
 /* Portfolio */
 /* .web-example {
 	width: 45%;
