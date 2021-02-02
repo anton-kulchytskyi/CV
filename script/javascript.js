@@ -37,18 +37,25 @@ function start() {
 	signIn ();
 }
 
-var socialOn = document.getElementById("social-small");
-var social = document.getElementById("social-large");
+function skillAnimation() {
+	var divs = document.querySelectorAll('.donut-segment');
+	for (var i = 0; i < divs.length; i++) {
+    	divs[i].classList.add('donut-segment-animation');
+	}
+}
 
-socialOn.onclick = function() {
-    social.style.display = 'block';
-};
+// var socialOn = document.getElementById("social-small");
+// var social = document.getElementById("social-large");
 
-window.onclick = function(event) {
-    if (event.target == social) {
-        social.style.display = 'none';
-    }
-};
+// socialOn.onclick = function() {
+//     social.style.display = 'block';
+// };
+
+// window.onclick = function(event) {
+//     if (event.target == social) {
+//         social.style.display = 'none';
+//     }
+// };
 
 // function socialOn() {
 // 	var x = document.getElementById("social-large");

@@ -7,6 +7,8 @@
 		<script src="https://js.cx/libs/animate.js"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style/style.css">
 		<link rel="stylesheet" href="style/media-queris.css">
 		<link rel="stylesheet" href="style/flex.css">
@@ -17,7 +19,7 @@
 		<div id="wrapper" class="column padding-10">
 			<div id="nav" class="row justify-around margin-20">
 				<a class="nav" href="#about">About</a>
-				<a class="nav" href="#skills">Skills</a>
+				<a class="nav" href="#skills" onclick="skillAnimation()">Skills</a>
 				<a class="nav" href="#education">Education</a>
 				<a class="nav" href="#experience">Experience</a>
 				<a class="nav" href="#reference">Reference</a>
@@ -25,7 +27,7 @@
 			</div>
 			<div id="nav-small" class="row justify-around margin-10">
 				<a class="nav" href="#about"><i class="far fa-user"></i></a>
-				<a class="nav" href="#skills"><i class="fas fa-tasks"></i></a>
+				<a class="nav" href="#skills" onclick="skillAnimation()"><i class="fas fa-tasks"></i></a>
 				<a class="nav" href="#education"><i class="fas fa-chalkboard-teacher"></i></a>
 				<a class="nav" href="#experience"><i class="fas fa-business-time"></i></a>
 				<a class="nav" href="#reference"><i class="far fa-handshake"></i></a>
@@ -45,7 +47,7 @@
 									<p class="signature">Anton Kulchytskyi</p>
 									<p>Junior Web Developer</p>
 									<!-- <button onclick="socialOn()" class="social-small"><i class="fas fa-id-card-alt fa-spin"></i></button> -->
-									<button id="social-small"><i class="fas fa-id-card-alt fa-spin"></i></button>
+									<!-- <button id="social-small"><i class="fas fa-id-card-alt fa-spin"></i></button> -->
 								</div>
 							</div>
 						</div>
@@ -113,41 +115,65 @@
 										<circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
 										<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#bd161b" stroke-width="2" stroke-dasharray="25 75" stroke-dashoffset="25"></circle>
 									</svg>
-									<i class="fab fa-wordpress skill-name"></i>
+									<p class="skill-name">ux-ui</p>
+									<!-- <i class="fab fa-wordpress skill-name"></i> -->
 								</div>
 							</div>
 						</div>
+						<!-- <div class="center w-100-perc">
+							<div class="column center">
+								<p class="mich">"I’m still learning"</p>
+								<p>Michelangelo at 87</p>
+							</div>
+						</div> -->
 					</div>
 				</div>
 						<!-- Education -->
 				<div id="education" class="carousel-cell w-100-perc h-100-perc">
-					<div class="flex w-100perc h-100-perc timeline">
-						<div class="years poznan flex center">
+					<div class="flex w-100perc timeline">
+						<div class="years column center">
+							<span>1997</span>
 							<span>2004</span>
-							<div class="years-text">
-								<h4>Adam Mickiewicz University, Poznań, Poland</h4>
-								<p>Major: master of theology</p>
+							<div class="overlay">
+								<div class="overlay-text column center h-100-perc">
+									<h4>Adam Mickiewicz University, Poznań, Poland</h4>
+									<p>Major: master of theology</p>
+								</div>								
+							</div>
+							<!-- <span>2004</span> -->
+						</div>
+						<div class="years column center">
+							<span>2005</span>
+							<span>2011</span>
+							<div class="overlay">
+								<div class="overlay-text column center h-100-perc">
+									<h4>IAPM, Kyiv, Ukraine</h4>
+									<p>Major: bank manager</p>
+								</div>								
 							</div>
 						</div>
-						<div class="years kyiv flex center">
-							<span>2004</span>
-							<div class="years-text">
-								<h4>Adam Mickiewicz University, Poznań, Poland</h4>
-								<p>Major: master of theology</p>
+						<div class="years column center">
+							<span>2012</span>
+							<span>2015</span>
+							<div class="overlay">
+								<div class="overlay-text column center h-100-perc">
+									<h4>Lviv Polytechnic University</h4>
+									<p>Major: engineer of civil and industrial construction</p>
+								</div>								
 							</div>
 						</div>
-						<div class="years lviv flex center"><span>2004</span>
-							<div class="years-text">
-								<h4>Adam Mickiewicz University, Poznań, Poland</h4>
-								<p>Major: master of theology</p>
+						<div class="years column center">
+							<span>2020</span>
+							<div class="overlay">
+								<div class="overlay-text column center h-100-perc">
+									<h4>Oykos Hub Development, Podgorica, Montenegro</h4>
+									<p>Elementary and advanced courses of HTML5, CSS3 and JavaScript</p>
+								</div>								
 							</div>
 						</div>
-						<div class="years oykos flex center"><span>2004</span>
-							<div class="years-text">
-								<h4>Adam Mickiewicz University, Poznań, Poland</h4>
-								<p>Major: master of theology</p>
-							</div>
-						</div>
+					</div>
+					<div class="edu-men flex center">
+						<img src="https://lh3.googleusercontent.com/ldcj8YPp-woLovPDBJvK4Huc7_MkiaRdEpnaTMqIiytIPIvwnRpEEkLTAW0RIDYxZ-PckZ3ZfevKeSKw3nImetZ6mNR_7p2WrT9v742aeGONR0j52LOqwyNaK0n4lb7gIO-jtrunvg=w2400" alt="">
 					</div>
 				</div>
 						<!-- Experience -->

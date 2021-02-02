@@ -20,30 +20,39 @@
 	.photo {
 		width: 50%;
 	}
-	#social-small {
+	/* #social-small {
 		display: block;
 		position: absolute;
 		right: 0;
-		/* bottom: 10px;		 */
-	}
+		bottom: 10px;
+	} */
 	/* .social-small {
 		display: block;
 		position: absolute;
 		right: 0;
 		bottom: 10px;		
 	} */
-	#social-large {
+	/* #social-large {
 		display: none;
 		position: absolute;
 		right: 0;
-		/* bottom: 50px; */
+		bottom: 50px;
 		width: 8%;
 		flex-wrap: wrap;
-	}
-	.skill-container {
-		flex-direction: column-reverse;
+	} */
+	/* #skills {
 		position: relative;
-	}
+	} */
+	/* .skill-container {
+		align-items: flex-start;
+		flex-direction: column-reverse; */
+		/* position: relative; */
+	/* } */
+	/* .men-skill img {
+		position: absolute;
+		bottom: 0;
+		width: 40%;
+	} */
 	.men-skill {
 		display: none;
 	}
@@ -56,6 +65,24 @@
 	.skill-name {
 		font-size: 30px;
 	}
+	.years span {
+		
+		font-size: 1.5em;
+		
+		margin: 2px;
+	}
+	.edu-men img {
+		width: 250%;
+	}
+	/* .timeline {
+		flex-direction: column-reverse;
+	} */
+	/* .overlay {
+		height: 100%;
+	} */
+	/* .years {
+		width: 100%;
+	} */
 	.card {
 		width: 100%;
 	}
