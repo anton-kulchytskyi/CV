@@ -4,6 +4,7 @@ var flkty = new Flickity('.carousel', {
 	wrapAround: true,
 	prevNextButtons: false,
 	pageDots: false,
+	setGallerySize: false,
 });
 
 
@@ -36,16 +37,28 @@ function start() {
 	signIn ();
 }
 
+var socialOn = document.getElementById("social-small");
+var social = document.getElementById("social-large");
 
-function socialOn() {
-	var x = document.getElementById("social-large");
-	if (x.style.display === "none") {
-		x.style.display = "block";
-	}
-	else {
-		x.style.display = "none";
-	}
-}
+socialOn.onclick = function() {
+    social.style.display = 'block';
+};
+
+window.onclick = function(event) {
+    if (event.target == social) {
+        social.style.display = 'none';
+    }
+};
+
+// function socialOn() {
+// 	var x = document.getElementById("social-large");
+// 	if (x.style.display === "none") {
+// 		x.style.display = "block";
+// 	}
+// 	else {
+// 		x.style.display = "none";
+// 	}
+// }
 
 
 

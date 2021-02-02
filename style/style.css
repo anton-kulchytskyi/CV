@@ -21,10 +21,10 @@ body {
 	text-transform: uppercase;
 }
 .nav:hover {
-	border-bottom: 1px solid  #ee6e73;
+	border-bottom: 1px solid #bd161b;
 }
 .nav:focus {
-	border-bottom: 1px solid  #ee6e73;
+	border-bottom: 1px solid #bd161b;
 }
 #nav-small {
 	display: none;
@@ -47,7 +47,7 @@ body {
 	width: 65%;
 }
 .about {
-	border-left: 10px solid  #ee6e73;
+	border-left: 10px solid #bd161b;
 	width: 85%;
 }
 .signature {
@@ -56,7 +56,7 @@ body {
 	font-weight: 600;
 	transform: rotate(-10deg);
 	transform-origin: 20% 40%;
-	color: #ee6e73;
+	color:#bd161b;
 	margin: 0;
 }
 #sign {
@@ -71,13 +71,20 @@ body {
 .social:hover {
 	transform: scale(1.5);
 }
-.social-small {
+#social-small {
 	display: none;	
 	color: #7fffd4;
 	background: transparent;
 	border: none;
 	font-size: x-large;
 }
+/* .social-small {
+	display: none;	
+	color: #7fffd4;
+	background: transparent;
+	border: none;
+	font-size: x-large;
+} */
 @keyframes singIn {
 	0% {
 		opacity: 0;
@@ -95,30 +102,23 @@ body {
 
 /* Skills*/
 
-/* #skills {
-	background: url('https://lh3.googleusercontent.com/dSw3-6YqhbkYP5Tq2EeFawRwVVxLZURwlc1q7Js7hL5LUSDrqbGP0Y790umggzBp_HVKQRqVM4-jT05ZMSwmT8CidGrmgYoVYh0CgfBt56qpRoifF5T6j6tPrrgRShx43sNnSYVcSw=w2400');
-} */
-
 .mich {
 	font-family: 'Swanky and Moo Moo', cursive;
 	font-size: 1.5em;
 	font-weight: 600;
 	letter-spacing: 3px;
-	color: #ee6e73;
+	color: #bd161b;
 	margin: 5px;
 }
-/* .men-skill {
-	
-} */
 .skill-back {
 	width: 30%;
-	position: relative;
+	position: relative;	
 }
 .donut {
 	width: 50%;
 }
 .donut-segment {
-	animation: progress 3s cubic-bezier(.53,-0.73,.1,1.5) forwards;
+	animation: progress 4s cubic-bezier(.53,-0.73,.1,1.5) forwards;	
 }
 @keyframes progress {
 	0% {
@@ -127,26 +127,67 @@ body {
 }
 .skill-name {
 	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
 	color: #7fffd4;
 	font-size: 48px;
+	animation: spinner 1.5s infinite linear;
+}
+@keyframes spinner {
+    0% {
+		transform: rotate3d(1, 1, 1, 0deg);
+	}
+    100% {
+		transform: rotate3d(1, 1, 1, 360deg);
+	}
+}
+
+/* Education */
+
+.years {
+	position: relative;
+	width: 25%;
+	background: linear-gradient(-45deg, #7fffd4, #54b7cf, #27386d,#bd161b);
+    background-size: 200% 200%;
+	animation: change 10s ease-in-out infinite;
+	transition: all 0.5s linear;
+}
+.years:hover {
+	width: 50% !important;
+}
+.years:hover .years-text{
+	height: 100%;
+}
+.years:hover span{
+	display: none;
+}
+.years-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% -50%);
+	width: 100%;
+	height: 0;
+	transition: all 0.5s linear;
+}
+.poznan {
+	background-image: url('https://lh3.googleusercontent.com/LFeVQKt9QXYU2P9t1seBQmGPdg0OFniYVDSL3ipGtwpVrYUOWuABlyxlu8uhZGNKttrh_HH_lZMD1O1xDxfRELMmVCPcQQhehEwu8EYsy1o0tURm1XTx1JZ3DnZAVi0XzAUrXpfONw=w2400');
+}
+.kyiv {
+	background-image: url('https://lh3.googleusercontent.com/pztDTeNnNNl8Vr0WdJXfoyBhDJxKEfzmLL1JUSokf2elpFHZ10-ZldHOPsIaLdqH0GICrtnuiFaG1M8m8XfMlyPcCocND9VjdWf_SKEscZ1R995GM-v2KN5VOF5tnWO1Jg8WAnIRIg=w2400');
+}
+.lviv {
+	background-image: url('https://lh3.googleusercontent.com/-nnAo__zbQx-A__Huny7ybbz5GnujPFHcGmsBYi4VKik8xUikUCdcJQGYc8Yy7a_tK_wa8cUGvtflc9xbZII2cvDGCi3_i26oZWJ7LZyDMCynTujVD7YbDmgslakECnO4jFjikH1Lw=w2400');
+}
+.oykos {
+	background-image: url('https://lh3.googleusercontent.com/-TDgWs3bU5ypjvwEGZjgWcbn2mrsY5e3yBn7gB65BtYjJnXgepdgX8r5kEjOA6yIbfeQRBh29NkO_-47p3W45sAFJLcPaMjVd1n3xhNvsEccT4SF23AgWdM-728uT43pfCvXPyqvkg=w2400');
 }
 /* Reference */
 
 .card {
 	width: 35%;
 	border-radius: 10px;
-	background: linear-gradient(-45deg, #7fffd4, #54b7cf, #27386d, #ee6e73);
+	background: linear-gradient(-45deg, #7fffd4, #54b7cf, #27386d,#bd161b);
     background-size: 150% 150%;
     animation: change 10s ease-in-out infinite;
-
-
-	/* background: #ee6e73;  fallback for old browsers
-	background: -webkit-linear-gradient(to top, #ee6e7350, #ee6e7380);  Chrome 10-25, Safari 5.1-6
-	background: linear-gradient(to top, #ee6e7350, #ee6e7380); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 @keyframes change {
     0% {
@@ -177,7 +218,7 @@ body {
 	letter-spacing: 3px;
 }
 .card a:hover {
-	color: #7fffd4;
+	color: #bd161b;
 }
 /* Portfolio */
 /* .web-example {

@@ -12,22 +12,31 @@
 	.photo-text {
 		width: 100%;
 	}
+	.skill-back {
+		width: 45%;
+	}
 }
 @media screen and (max-width: 550px) {
 	.photo {
 		width: 50%;
 	}
-	.social-small {
+	#social-small {
+		display: block;
+		position: absolute;
+		right: 0;
+		/* bottom: 10px;		 */
+	}
+	/* .social-small {
 		display: block;
 		position: absolute;
 		right: 0;
 		bottom: 10px;		
-	}
+	} */
 	#social-large {
 		display: none;
 		position: absolute;
 		right: 0;
-		bottom: 50px;
+		/* bottom: 50px; */
 		width: 8%;
 		flex-wrap: wrap;
 	}
@@ -36,13 +45,7 @@
 		position: relative;
 	}
 	.men-skill {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-	}
-	.men-skill img {
-		width: 100%;
-		opacity: 0.5;
+		display: none;
 	}
 	.skill-back {
 		width: 40%;
