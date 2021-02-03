@@ -20,6 +20,12 @@
 	.photo {
 		width: 50%;
 	}
+	.about {
+		font-size: 0.85em;
+	}
+	.signature {
+		font-size: 1.75em;
+	}
 	/* #social-small {
 		display: block;
 		position: absolute;
@@ -73,6 +79,10 @@
 	}
 	.edu-men img {
 		width: 250%;
+	}
+	.work, .work-year {
+		width: 100%;
+		text-align: center;
 	}
 	/* .timeline {
 		flex-direction: column-reverse;
