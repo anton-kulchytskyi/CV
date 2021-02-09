@@ -7,7 +7,7 @@ body {
 	overflow: hidden;
 }
 #wrapper {
-    background-color: #000000e8;
+    background-color: #000000af;
     width: 90%;
 	height: 90%;
 }
@@ -199,8 +199,9 @@ body {
 
 /* Experience */
 
-.work, .work-year {
+.work-left, .work-right, .work-year {
 	width: 50%;
+	/* height: 25%; */
 }
 .work-year {
 	font-family: 'Swanky and Moo Moo', cursive;
@@ -209,15 +210,24 @@ body {
 	letter-spacing: 2px;
 	color: #bd161b;
 }
-.work {
-	
-	border-bottom: 10px solid;
-  	border-image-slice: 1;
+/* .work-left, .work-right {
+	border: 0 solid;
 	border-bottom-width: 5px;
-	border-bottom-style: solid;
-	border-image-source: linear-gradient(to left,#00000000, #bd161b, #00000000);
+	border-image: linear-gradient(to right, #bd161b, #bd161b42, #00000000) 1;
+} */
+.work-left {
+	border: 0 solid;
+	border-bottom-width: 5px;
+	border-left-width: 5px;
+	border-image: linear-gradient(to top, #bd161b, #bd161b42, #00000000) 1;
 }
-.work a {
+.work-right {
+	border: 0 solid;
+	border-bottom-width: 5px;
+	border-right-width: 5px;
+	border-image: linear-gradient(to top, #bd161b, #bd161b42, #00000000) 1;	
+}
+.work-right a, .work-left a {
 	text-decoration: none;
 	color: #bd161b;
 	cursor: pointer;
