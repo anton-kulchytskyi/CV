@@ -18,9 +18,10 @@
 	.form-svg {
 		align-items: center;
 	}
-	.about-all {
+	/* .about-all {
 		flex-direction: column-reverse;
-	}
+		flex-direction: row-reverse;
+	} */
 }
 @media screen and (max-width: 550px) and (orientation: portrait) {
 	#contact {
