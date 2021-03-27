@@ -5,13 +5,14 @@ var flkty = new Flickity('.carousel', {
 	prevNextButtons: false,
 	pageDots: false,
 	setGallerySize: false,
+	initialIndex: '.is-initial-select',
 });
 
 
 // typewriter on "About" page
 
 var i = 0;
-var txt = 'Hi, my name is Anton and I am 40. I have few experience of writing code, limited to elementary courses. This may speak against me, but I believe that everything is just beginning and my career in IT will be filled with bright events and worthy projects.';
+var txt = 'Hi, my name is Anton and and I am learning to code almost on my own. After the initial HTML, CSS and JS courses, I mostly use free platforms for learning. If you need a simple website or landing page - I can help with this for free so that I can fill my portfolio with real projects. I believe that everything is just beginning and my career in IT will be filled with bright events and worthy projects.';
 var speed = 65;
 
 function typeWriter() {
@@ -29,7 +30,7 @@ function signIn() {
 	
 	setTimeout(() => {
 		sign.style.opacity = 1;
-	}, 18500);
+	}, 26500);
 }
 
 function start() {
@@ -43,38 +44,3 @@ function skillAnimation() {
     	divs[i].classList.add('donut-segment-animation');
 	}
 }
-
-// var socialOn = document.getElementById("social-small");
-// var social = document.getElementById("social-large");
-
-// socialOn.onclick = function() {
-//     social.style.display = 'block';
-// };
-
-// window.onclick = function(event) {
-//     if (event.target == social) {
-//         social.style.display = 'none';
-//     }
-// };
-
-// function socialOn() {
-// 	var x = document.getElementById("social-large");
-// 	if (x.style.display === "none") {
-// 		x.style.display = "block";
-// 	}
-// 	else {
-// 		x.style.display = "none";
-// 	}
-// }
-
-
-
-// function showHide(hide1, hide2, hide3) {
-//     if (document.getElementById(hide1, hide2, hide3)) { 
-//         var obj = document.getElementById(hide1, hide2, hide3); 
-//         if (obj.style.display != "block") { 
-//             obj.style.display = "block"; 
-//         }
-//         else obj.style.display = "none"; 
-//     }     
-// }

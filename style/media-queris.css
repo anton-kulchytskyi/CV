@@ -15,10 +15,22 @@
 	.skill-back {
 		width: 45%;
 	}
+	.form-svg {
+		align-items: center;
+	}
+	.about-all {
+		flex-direction: column-reverse;
+	}
 }
-@media screen and (max-width: 550px) {
-	.photo {
-		width: 50%;
+@media screen and (max-width: 550px) and (orientation: portrait) {
+	#contact {
+		flex-direction: column-reverse;
+	}
+	.form {
+		width: 100%;
+	}
+	.form-svg {
+		width: 70%;
 	}
 	.about {
 		font-size: 0.85em;
@@ -26,39 +38,9 @@
 	.signature {
 		font-size: 1.75em;
 	}
-	/* #social-small {
-		display: block;
-		position: absolute;
-		right: 0;
-		bottom: 10px;
-	} */
-	/* .social-small {
-		display: block;
-		position: absolute;
-		right: 0;
-		bottom: 10px;		
-	} */
-	/* #social-large {
-		display: none;
-		position: absolute;
-		right: 0;
-		bottom: 50px;
-		width: 8%;
-		flex-wrap: wrap;
-	} */
-	/* #skills {
-		position: relative;
-	} */
-	/* .skill-container {
-		align-items: flex-start;
-		flex-direction: column-reverse; */
-		/* position: relative; */
-	/* } */
-	/* .men-skill img {
-		position: absolute;
-		bottom: 0;
-		width: 40%;
-	} */
+	.photo {
+		width: 65%;
+	}
 	.men-skill {
 		display: none;
 	}
@@ -71,28 +53,10 @@
 	.skill-name {
 		font-size: 30px;
 	}
-	.years span {
-		
-		font-size: 1.5em;
-		
+	.years span {		
+		font-size: 1.5em;		
 		margin: 2px;
 	}
-	.edu-men img {
-		width: 250%;
-	}
-	.work, .work-year {
-		width: 100%;
-		text-align: center;
-	}
-	/* .timeline {
-		flex-direction: column-reverse;
-	} */
-	/* .overlay {
-		height: 100%;
-	} */
-	/* .years {
-		width: 100%;
-	} */
 	.card {
 		width: 100%;
 	}
@@ -106,8 +70,5 @@
 	}
 	.name {
 		font-size: 24px;
-	}
-	.web-example {
-		width: 80%;
 	}
 }
