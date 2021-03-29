@@ -48,7 +48,7 @@
 .h-100-perc {
     height: 100%;
 }
-/* .grow-1 {
+.grow-1 {
     flex-grow: 1;
 }
 .grow-2 {
@@ -60,7 +60,6 @@
 .grow-4 {
     flex-grow: 4;
 }
- */
 .margin-auto-0 {
     margin: auto 0;
 }
@@ -72,6 +71,9 @@
 }
 .margin-10 {
     margin: 10px;
+}
+.margin-5 {
+    margin: 5px;
 }
 .padding-r-20 {
     padding-right: 20px;
