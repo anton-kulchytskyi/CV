@@ -8,19 +8,27 @@ body {
 	overflow: hidden;
 }
 #wrapper {
-    background-color: #000000af;
-    width: 80%;
-	height: 80%;
-	border-radius: 25px;	
+    /* background-color: #000000af; */
+    width: 95%;
+	height: 95%;
+	/* border-radius: 25px; */
+	/* margin: 0 auto;	 */
 }
 
 /* Navigation */
 
+#nav {
+	background-color: #000000af;
+	border-radius: 15px;
+}
+
 .nav {
 	text-decoration: none;
 	cursor: pointer;
-	color: #7fffd4;
+	color: #7fffd4;	
 	text-transform: uppercase;
+	
+	/* margin-bottom: 3px; */
 }
 .nav:hover {
 	border-bottom: 1px solid #bd161b;
@@ -28,21 +36,20 @@ body {
 .nav:focus {
 	border-bottom: 1px solid #bd161b;
 }
-.social {
-	text-decoration: none;
-	cursor: pointer;
-	color: #7fffd4;
-	font-size: x-large;
-}
-.social:hover {
-	transform: scale(1.5);
-}
 #nav-small {
+	background-color: #000000af;
+	border-radius: 15px;
+	/* margin-bottom: 3px; */
 	display: none;
 }
 
 /* Main content */
 
+.carousel {
+	background-color: #000000af;
+	border-radius: 15px;
+	margin: 3px 0;
+}
 /* Contact form */
 
 .form-svg {
@@ -83,7 +90,7 @@ body {
 /* About*/
 
 .photo-text {
-	width: 45%;
+	width: 65%;
 }
 .about {
 	border-left: 10px solid #bd161b;
@@ -104,10 +111,10 @@ body {
 #sign {
 	width: 100%;
 	opacity: 0;
-	animation: singIn 1.5s linear 26s forwards;
+	animation: singIn 1.5s linear 25s forwards;
 }
 .photo {
-	width: 40%;
+	width: 30%;
 	padding: 20px;
 }
 .photo svg {
@@ -131,20 +138,15 @@ body {
 
 /* Skills*/
 
-.mich {
-	font-family: 'Swanky and Moo Moo', cursive;
-	font-size: 2em;
-	font-weight: 600;
-	letter-spacing: 3px;
-	color: #bd161b;
-	margin: 5px;
+.skill {
+	width: 50%;
 }
 .skill-back {
 	width: 30%;
 	position: relative;	
 }
 .donut {
-	width: 40%;
+	width: 50%;
 }
 .donut-segment-animation {
 	animation: progress 4s cubic-bezier(.53,-0.73,.1,1.5) forwards;	
@@ -157,7 +159,7 @@ body {
 .skill-name {
 	position: absolute;
 	color: #7fffd4;
-	font-size: 36px;
+	font-size: 3em;
 	animation: spinner 3s infinite linear;
 }
 @keyframes spinner {
@@ -169,14 +171,23 @@ body {
 	}
 }
 .skill-svg {
-	width: 55%;
+	width: 40%;
+}
+.mich {
+	font-family: 'Swanky and Moo Moo', cursive;
+	font-size: 2em;
+	font-weight: 600;
+	letter-spacing: 3px;
+	color: #bd161b;
+	margin: 5px;
 }
 .skill-svg svg {
 	width: 100%;
+	height: auto;
 }
 /* Education */
 
-#education {
+/* #education {
 	position: relative;
 }
 .edu-men {
@@ -228,17 +239,17 @@ body {
 .overlay-text {
 	text-align: center;
 	color: #bd161b;
-}
+} */
 
 /* Reference */
 
-.card {
+/* .card {
 	width: 35%;
 	border-radius: 10px;
 	background: linear-gradient(-45deg, #7fffd400, #7fffd480, #7fffd400);
     background-size: 400% 400%;
 	animation: change 10s ease-in-out infinite;
-}
+} 
 @keyframes change {
     0% {
         background-position: 0% 50%;
@@ -269,8 +280,25 @@ body {
 }
 .card a:hover {
 	color: #bd161b;
+} */
+
+/* Footer */
+footer {
+	background-color: #000000af;
+	border-radius: 15px;
+	/* margin-top: 3px; */
 }
+
 footer p {
 	color: #7fffd4;
-	font-size: 0.5em;
+	font-size: 0.625em;
+}
+.social {
+	text-decoration: none;
+	cursor: pointer;
+	color: #7fffd4;
+	font-size: 1em;
+}
+.social:hover {
+	transform: scale(1.5);
 }

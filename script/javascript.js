@@ -5,6 +5,7 @@ var flkty = new Flickity('.carousel', {
 	prevNextButtons: false,
 	pageDots: false,
 	setGallerySize: false,
+	// adaptiveHeight: true,
 	initialIndex: '.is-initial-select',
 });
 
@@ -12,7 +13,7 @@ var flkty = new Flickity('.carousel', {
 // typewriter on "About" page
 
 var i = 0;
-var txt = 'Hi, my name is Anton and and I am learning to code almost on my own. After the initial HTML, CSS and JS courses, I mostly use free platforms for learning. If you need a simple website or landing page - I can help with this for free so that I can fill my portfolio with real projects. I believe that everything is just beginning and my career in IT will be filled with bright events and worthy projects.';
+var txt = 'Hi, my name is Anton and and I am learning to code almost on my own. Now I am looking for my first job as Trainee/Internship Frontend Developer. If you need a simple website or landing page - I can help with this for free so that I can fill my portfolio with real projects. I believe that everything is just beginning and my career in IT will be filled with bright events and worthy projects.';
 var speed = 65;
 
 function typeWriter() {

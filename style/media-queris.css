@@ -1,8 +1,8 @@
 @media screen and (max-width: 800px) {
-	#wrapper {
+	/* #wrapper {
 		width: 95%;
 		height: 95%;		
-	}
+	} */
 	#nav {
 		display: none;
 	}
@@ -18,21 +18,15 @@
 	.form-svg {
 		align-items: center;
 	}
+	/* .skill {
+		width: 0%;
+	} */
 	/* .about-all {
 		flex-direction: column-reverse;
 		flex-direction: row-reverse;
 	} */
 }
-@media screen and (max-width: 550px) and (orientation: portrait) {
-	#contact {
-		flex-direction: column-reverse;
-	}
-	.form {
-		width: 100%;
-	}
-	.form-svg {
-		width: 70%;
-	}
+@media screen and (max-width: 550px) {
 	.about {
 		font-size: 0.85em;
 	}
@@ -42,8 +36,8 @@
 	.photo {
 		width: 65%;
 	}
-	.men-skill {
-		display: none;
+	.skill, .skill-svg {
+		width: 100%;
 	}
 	.skill-back {
 		width: 40%;
@@ -52,9 +46,16 @@
 		width: 80%;
 	}
 	.skill-name {
-		font-size: 30px;
+		font-size: 2em;
 	}
-	.years span {		
+	.mich {
+		font-size: 1em;
+	}
+	.skill-svg svg {
+		width: 70%;
+		height: auto;
+	}
+	/* .years span {		
 		font-size: 1.5em;		
 		margin: 2px;
 	}
@@ -71,5 +72,16 @@
 	}
 	.name {
 		font-size: 24px;
+	} */
+}
+@media screen and (max-width: 550px) and (orientation: portrait) {
+	#contact {
+		flex-direction: column-reverse;
+	}
+	.form {
+		width: 100%;
+	}
+	.form-svg {
+		width: 70%;
 	}
 }
