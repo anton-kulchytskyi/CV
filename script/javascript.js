@@ -13,7 +13,7 @@ var flkty = new Flickity('.carousel', {
 // typewriter on "About" page
 
 var i = 0;
-var txt = 'Hi, my name is Anton and and I am learning to code almost on my own. Now I am looking for my first job as Trainee/Internship Frontend Developer. If you need a simple website or landing page - I can help with this for free so that I can fill my portfolio with real projects. I believe that everything is just beginning and my career in IT will be filled with bright events and worthy projects.';
+var txt = 'Hi, my name is Anton and and I am learning to code almost on my own. Now I am looking for my first job as Trainee/Internship Frontend Developer. I believe that everything is just beginning and my career in IT will be filled with bright events and worthy projects.';
 var speed = 65;
 
 function typeWriter() {
@@ -31,7 +31,7 @@ function signIn() {
 	
 	setTimeout(() => {
 		sign.style.opacity = 1;
-	}, 26500);
+	}, 21500);
 }
 
 function start() {
