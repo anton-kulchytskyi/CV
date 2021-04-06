@@ -108,7 +108,7 @@ body {
 #sign {
 	width: 100%;
 	opacity: 0;
-	animation: singIn 1.5s linear 20s forwards;
+	animation: singIn 1.5s linear 18s forwards;
 }
 .photo {
 	width: 30%;

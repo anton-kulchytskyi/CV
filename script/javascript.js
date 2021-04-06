@@ -31,7 +31,7 @@ function signIn() {
 	
 	setTimeout(() => {
 		sign.style.opacity = 1;
-	}, 21500);
+	}, 19500);
 }
 
 function start() {
