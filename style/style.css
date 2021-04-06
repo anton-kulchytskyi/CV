@@ -83,6 +83,9 @@ body {
 
 /* About*/
 
+/* #about {
+	position: relative;
+} */
 .photo-text {
 	width: 65%;
 }
@@ -129,7 +132,16 @@ body {
 		transform: scale(1);
 	}	
 }
-
+/* .left, .right {
+	position: absolute;
+	bottom: 150px;
+}
+.left {
+	left: 0;
+}
+.right {
+	right: 0;
+} */
 /* Skills*/
 
 .quote {

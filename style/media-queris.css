@@ -1,10 +1,13 @@
 @media screen and (max-width: 550px) {
-	#nav {
+	/* #nav {
 		display: none;
 	}
 	#nav-small {
 		display: flex;
-	}	
+	}	 */
+	.nav {
+		font-size: 0.7em;
+	}
 	#contact {
 		flex-direction: column-reverse;
 	}
