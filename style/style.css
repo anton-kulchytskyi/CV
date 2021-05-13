@@ -83,9 +83,6 @@ body {
 
 /* About*/
 
-/* #about {
-	position: relative;
-} */
 .photo-text {
 	width: 65%;
 }
@@ -102,7 +99,7 @@ body {
 	letter-spacing: 1px;
 	transform: rotate(-10deg);
 	transform-origin: 20% 40%;
-	color:#bb161b;
+	color:#bd161b;
 	margin: 0;
 }
 #sign {
@@ -132,23 +129,14 @@ body {
 		transform: scale(1);
 	}	
 }
-/* .left, .right {
-	position: absolute;
-	bottom: 150px;
-}
-.left {
-	left: 0;
-}
-.right {
-	right: 0;
-} */
+
 /* Skills*/
 
 .quote {
 	text-align: center;
 }
 .quote p {
-	color: #bb161b;
+	color: #bd161b;
 	font-family: 'Swanky and Moo Moo', cursive;
 	font-size: 2.5em;
 	font-weight: 600;
@@ -193,19 +181,25 @@ body {
 	width: 100%;
 	height: auto;
 }
-.svg-text-1 {
-	fill: #bb161b;
-	stroke: none;
-	font-family: 'Swanky and Moo Moo', cursive;
-	font-size: 2.5em;
-	font-weight: 600;
+
+/* Swipe icons */
+
+#swipe-left, #swipe-right {
+	position: absolute;
+	bottom: 15px;
+	fill: #bd161b;
+	width: 24px;
+	height: 24px;
 }
-.svg-text-2 {
-	fill: #000;
-	stroke: none;
-	font-size: 1.25em;
-	font-weight: 600;
-	letter-spacing: 1px;
+#swipe-left {
+	left: 15px
+}
+#swipe-right {
+	right: 15px;
+}
+#swipe-left path, #swipe-right path {
+	stroke: #bd161b;
+	stroke-width: 24px;
 }
 
 /* Footer */

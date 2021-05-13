@@ -1,11 +1,9 @@
 var flkty = new Flickity('.carousel', {
-	// draggable: false,
 	hash: true,
 	wrapAround: true,
 	prevNextButtons: false,
 	pageDots: false,
 	setGallerySize: false,
-	// adaptiveHeight: true,
 	initialIndex: '.is-initial-select',
 });
 
