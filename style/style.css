@@ -8,6 +8,7 @@ body {
 	overflow: hidden;
 }
 #wrapper {
+	position: relative;
     width: 95%;
 	height: 95%;
 }
@@ -24,11 +25,9 @@ body {
 	cursor: pointer;
 	color: #7fffd4;	
 	text-transform: uppercase;
+	border-bottom: 1px solid transparent;
 }
 .nav:hover {
-	border-bottom: 1px solid #bd161b;
-}
-.nav:focus {
 	border-bottom: 1px solid #bd161b;
 }
 #nav-small {
@@ -186,20 +185,46 @@ body {
 
 #swipe-left, #swipe-right {
 	position: absolute;
-	bottom: 15px;
-	fill: #bd161b;
-	width: 24px;
-	height: 24px;
+	bottom: 50px;
+	color: #bd161b;
+	font-size: 24px;
+	z-index: 2;
 }
 #swipe-left {
-	left: 15px
+	left: 5px
 }
 #swipe-right {
-	right: 15px;
+	right: 5px;
 }
-#swipe-left path, #swipe-right path {
-	stroke: #bd161b;
-	stroke-width: 24px;
+.swipe-1 {
+	opacity: 0;
+	animation: swipe1 3s step-end infinite;
+}
+.swipe-2 {
+	opacity: 0;
+	animation: swipe2 3s step-end infinite;
+}
+.swipe-3 {
+	opacity: 0;
+	animation: swipe3 3s step-end infinite;
+}
+@keyframes swipe1 {
+	8% {opacity: 1;}
+	24% {opacity: 0;}
+	41% {opacity: 1;}
+	57% {opacity: 0;}
+	74% {opacity: 1;}
+	90% {opacity: 0;}
+}
+@keyframes swipe2 {
+	41% {opacity: 1;}
+	57% {opacity: 0;}
+	74% {opacity: 1;}
+	90% {opacity: 0;}
+}
+@keyframes swipe3 {
+	74% {opacity: 1;}
+	90% {opacity: 0;}
 }
 
 /* Footer */
